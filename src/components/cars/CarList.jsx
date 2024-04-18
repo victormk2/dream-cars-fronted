@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./car.css";
 import Car from "./Car";
+import Header from "../default/header/Header";
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -15,9 +16,9 @@ const CarList = () => {
 
   return (
     <>
+      <Header title="Dream Cars" />
       <div className="container list_container">
-        <h2>Cars list</h2>
-        <ul>
+        <ul className="car-list">
           {cars.map((car) => (
             <Car key={car.id} car={car} />
           ))}

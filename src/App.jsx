@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-      <AppRoutes />
+      <div className="App background-def">
+        <AppRoutes />
+      </div>
     </>
   );
 }

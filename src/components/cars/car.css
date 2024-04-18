@@ -6,6 +6,18 @@
   margin-top: 3rem;
 }
 
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  list-style: none;
+}
+
+.car-list li {
+  margin: 0;
+  padding: 0;
+}
+
 .bottom_container {
   position: fixed;
   top: 80%;
@@ -17,37 +29,53 @@
 }
 
 .form_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
 }
 
 .input_group {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .input_group input {
-    width: 100%; 
-    padding: 0.5rem; 
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.input_group label {
+  display: block;
 }
 
 .error_container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.25rem;
 }
 
 .btn_container {
-    display: flex;
-    gap: 10px; /* Define o espaçamento entre os botões */
-    padding: 1rem;
+  display: flex;
+  gap: 10px; /* Define o espaçamento entre os botões */
+  padding: 1rem;
 }
 
 .img_container {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
+}
+
+.card__style {
+  width: 18rem;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 10px rgba(251, 159, 137, 0.7);
+  max-width: 18rem;
+}
+
+.form__style {
+  color: #fb9f89;
 }

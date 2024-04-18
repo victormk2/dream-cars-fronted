@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./car.css";
+import Header from "../default/header/Header";
 
 const CarForm = () => {
   const currentYear = new Date().getFullYear();
@@ -64,8 +65,8 @@ const CarForm = () => {
 
   return (
     <div className="container list_container">
-      <h2>Cadastro de Carro</h2>
-      <form onSubmit={handleSubmit}>
+      <Header title="Cadastro de carros" />
+      <form onSubmit={handleSubmit} className="form__style">
         <div className="form_container">
           <div className="input_group">
             <label>
@@ -78,7 +79,7 @@ const CarForm = () => {
               />
             </label>
           </div>
-          <div className="input_group">
+          <div className="input_group mb-3">
             <label>
               Year:
               <input
@@ -94,11 +95,12 @@ const CarForm = () => {
               </div>
             )}
           </div>
-          <div className="input_group">
+          <div class="input-group mb-3">
             <label>
               Image:
               <input
                 type="file"
+                class="form-control"
                 name="image"
                 ref={imageInputRef}
                 onChange={handleImageChange}

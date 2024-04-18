@@ -1,0 +1,10 @@
+.header {
+    font-size: 4rem;
+    color: #FB9F89;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
