@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./car.css";
+import Car from "./Car";
 
 const CarList = () => {
   const [cars, setCars] = useState([]);
@@ -18,12 +19,7 @@ const CarList = () => {
         <h2>Cars list</h2>
         <ul>
           {cars.map((car) => (
-            <>
-              <li key={car.id}>
-                {car.model}-{car.year}
-              </li>
-              {car.photo && <img src={car.photo} className="img_container" />}
-            </>
+            <Car key={car.id} car={car} />
           ))}
         </ul>
       </div>
