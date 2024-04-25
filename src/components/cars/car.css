@@ -69,6 +69,11 @@
   width: 300px;
 }
 
+.img_container-big {
+  height: 450px;
+  width: 450px;
+}
+
 .card__style {
   width: 18rem;
   background-color: #ffffff;
@@ -78,4 +83,15 @@
 
 .form__style {
   color: #fb9f89;
+}
+
+.img-container-input {
+  position: relative;
+}
+
+.btn-removal {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
